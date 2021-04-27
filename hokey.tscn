@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://player1.gd" type="Script" id=1]
 [ext_resource path="res://ball_blue_large_alt.png" type="Texture" id=2]
@@ -11,6 +11,8 @@
 [ext_resource path="res://comptador player 2.gd" type="Script" id=9]
 [ext_resource path="res://porteria player 2.gd" type="Script" id=10]
 [ext_resource path="res://porteria player 1.gd" type="Script" id=11]
+[ext_resource path="res://temps.gd" type="Script" id=12]
+[ext_resource path="res://hokey.gd" type="Script" id=13]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 38.9705
@@ -69,6 +71,7 @@ extents = Vector2( 22.5922, 113.416 )
 extents = Vector2( 31.8131, 110.978 )
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource( 13 )
 
 [node name="player1" type="KinematicBody2D" parent="."]
 collision_layer = 2
@@ -196,5 +199,26 @@ rect_scale = Vector2( 3, 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="temps" type="CanvasLayer" parent="."]
+script = ExtResource( 12 )
+
+[node name="temps" type="Label" parent="temps" groups=[
+"temps",
+]]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -144.0
+margin_top = 48.0
+margin_right = -92.9999
+margin_bottom = 62.0
+rect_scale = Vector2( 3, 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
 [connection signal="body_entered" from="porteria player 1" to="pilota" method="_on_porteria_player_1_body_entered"]
 [connection signal="body_entered" from="porteria player 2" to="pilota" method="_on_porteria_player_2_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
