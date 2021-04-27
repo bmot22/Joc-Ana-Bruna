@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://player1.gd" type="Script" id=1]
 [ext_resource path="res://ball_blue_large_alt.png" type="Texture" id=2]
@@ -44,10 +44,10 @@ bounce = 2.0
 radius = 30.0368
 
 [sub_resource type="RectangleShape2D" id=7]
-extents = Vector2( 21.4913, 76.5308 )
+extents = Vector2( 24.049, 67.779 )
 
 [sub_resource type="RectangleShape2D" id=8]
-extents = Vector2( 614.15, 15.4247 )
+extents = Vector2( 568.42, 15.4247 )
 
 [sub_resource type="RectangleShape2D" id=9]
 extents = Vector2( 17.9548, 97.9905 )
@@ -59,7 +59,13 @@ extents = Vector2( 503.507, 20.4364 )
 extents = Vector2( 37.3359, 81.0839 )
 
 [sub_resource type="RectangleShape2D" id=12]
-extents = Vector2( 34.8161, 75.3217 )
+extents = Vector2( 34.8161, 68.191 )
+
+[sub_resource type="RectangleShape2D" id=16]
+extents = Vector2( 81.894, 135.845 )
+
+[sub_resource type="RectangleShape2D" id=17]
+extents = Vector2( 57.894, 147.845 )
 
 [sub_resource type="RectangleShape2D" id=13]
 extents = Vector2( 2.64307, 326.868 )
@@ -129,7 +135,7 @@ texture = ExtResource( 6 )
 position = Vector2( 110.826, -141.155 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="límits"]
-position = Vector2( 897.845, 247.934 )
+position = Vector2( 901.845, 255.934 )
 shape = SubResource( 7 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="límits"]
@@ -149,8 +155,16 @@ position = Vector2( -129.932, 630.785 )
 shape = SubResource( 11 )
 
 [node name="CollisionShape2D6" type="CollisionShape2D" parent="límits"]
-position = Vector2( -124.95, 244.346 )
+position = Vector2( -124.95, 252.346 )
 shape = SubResource( 12 )
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="límits"]
+position = Vector2( -236, 420 )
+shape = SubResource( 16 )
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="límits"]
+position = Vector2( 1028, 444 )
+shape = SubResource( 17 )
 
 [node name="meitat" type="StaticBody2D" parent="."]
 collision_layer = 2147483652
@@ -168,6 +182,7 @@ position = Vector2( -17.8704, 297.773 )
 shape = SubResource( 14 )
 
 [node name="porteria player 2" type="Area2D" parent="."]
+position = Vector2( 0, 4 )
 script = ExtResource( 10 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="porteria player 2"]
