@@ -44,10 +44,10 @@ bounce = 2.0
 radius = 30.0368
 
 [sub_resource type="RectangleShape2D" id=7]
-extents = Vector2( 24.049, 67.779 )
+extents = Vector2( 24.049, 76.5077 )
 
 [sub_resource type="RectangleShape2D" id=8]
-extents = Vector2( 568.42, 15.4247 )
+extents = Vector2( 566.352, 16.0806 )
 
 [sub_resource type="RectangleShape2D" id=9]
 extents = Vector2( 17.9548, 97.9905 )
@@ -59,22 +59,22 @@ extents = Vector2( 503.507, 20.4364 )
 extents = Vector2( 37.3359, 81.0839 )
 
 [sub_resource type="RectangleShape2D" id=12]
-extents = Vector2( 34.8161, 68.191 )
-
-[sub_resource type="RectangleShape2D" id=16]
-extents = Vector2( 81.894, 135.845 )
-
-[sub_resource type="RectangleShape2D" id=17]
-extents = Vector2( 57.894, 147.845 )
+extents = Vector2( 34.8161, 78.191 )
 
 [sub_resource type="RectangleShape2D" id=13]
-extents = Vector2( 2.64307, 326.868 )
+extents = Vector2( 81.894, 135.845 )
 
 [sub_resource type="RectangleShape2D" id=14]
-extents = Vector2( 22.5922, 113.416 )
+extents = Vector2( 57.894, 147.845 )
 
 [sub_resource type="RectangleShape2D" id=15]
-extents = Vector2( 31.8131, 110.978 )
+extents = Vector2( 2.64307, 326.868 )
+
+[sub_resource type="RectangleShape2D" id=16]
+extents = Vector2( 22.5922, 113.416 )
+
+[sub_resource type="RectangleShape2D" id=17]
+extents = Vector2( 31.8131, 114.578 )
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 13 )
@@ -135,7 +135,7 @@ texture = ExtResource( 6 )
 position = Vector2( 110.826, -141.155 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="límits"]
-position = Vector2( 901.845, 255.934 )
+position = Vector2( 897.508, 248.153 )
 shape = SubResource( 7 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="límits"]
@@ -155,16 +155,16 @@ position = Vector2( -129.932, 630.785 )
 shape = SubResource( 11 )
 
 [node name="CollisionShape2D6" type="CollisionShape2D" parent="límits"]
-position = Vector2( -124.95, 252.346 )
+position = Vector2( -126.95, 246.346 )
 shape = SubResource( 12 )
 
 [node name="CollisionShape2D7" type="CollisionShape2D" parent="límits"]
 position = Vector2( -236, 420 )
-shape = SubResource( 16 )
+shape = SubResource( 13 )
 
 [node name="CollisionShape2D8" type="CollisionShape2D" parent="límits"]
 position = Vector2( 1028, 444 )
-shape = SubResource( 17 )
+shape = SubResource( 14 )
 
 [node name="meitat" type="StaticBody2D" parent="."]
 collision_layer = 2147483652
@@ -172,14 +172,14 @@ collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="meitat"]
 position = Vector2( 505.221, 283.437 )
-shape = SubResource( 13 )
+shape = SubResource( 15 )
 
 [node name="porteria player 1" type="Area2D" parent="."]
 script = ExtResource( 11 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="porteria player 1"]
 position = Vector2( -17.8704, 297.773 )
-shape = SubResource( 14 )
+shape = SubResource( 16 )
 
 [node name="porteria player 2" type="Area2D" parent="."]
 position = Vector2( 0, 4 )
@@ -187,7 +187,7 @@ script = ExtResource( 10 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="porteria player 2"]
 position = Vector2( 1045.33, 293.33 )
-shape = SubResource( 15 )
+shape = SubResource( 17 )
 
 [node name="comptador player 1" type="CanvasLayer" parent="."]
 script = ExtResource( 8 )
@@ -223,10 +223,10 @@ script = ExtResource( 12 )
 ]]
 anchor_left = 1.0
 anchor_right = 1.0
-margin_left = -144.0
-margin_top = 48.0
-margin_right = -92.9999
-margin_bottom = 62.0
+margin_left = -158.0
+margin_top = 32.0
+margin_right = -107.0
+margin_bottom = 46.0
 rect_scale = Vector2( 3, 3 )
 __meta__ = {
 "_edit_use_anchors_": false

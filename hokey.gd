@@ -26,3 +26,4 @@ func _on_Timer_timeout():
 		Globalvar.update_time()
 	else:
 		print("S'ha acabat el joc!")
+		queue_free()
