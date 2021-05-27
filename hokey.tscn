@@ -53,13 +53,13 @@ extents = Vector2( 566.352, 16.0806 )
 extents = Vector2( 17.9548, 97.9905 )
 
 [sub_resource type="RectangleShape2D" id=10]
-extents = Vector2( 503.507, 20.4364 )
+extents = Vector2( 503.507, 19.2563 )
 
 [sub_resource type="RectangleShape2D" id=11]
 extents = Vector2( 37.3359, 81.0839 )
 
 [sub_resource type="RectangleShape2D" id=12]
-extents = Vector2( 34.8161, 78.191 )
+extents = Vector2( 34.8161, 74.8948 )
 
 [sub_resource type="RectangleShape2D" id=13]
 extents = Vector2( 81.894, 135.845 )

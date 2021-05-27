@@ -21,6 +21,7 @@ config/icon="res://icon.png"
 [autoload]
 
 Globalvar="*res://globalvar.gd"
+Global="*res://joc disparar/global.gd"
 
 [input]
 

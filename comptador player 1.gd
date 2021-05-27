@@ -1,20 +1,7 @@
-extends CanvasLayer
+extends Node
 
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
-# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass
 func _process(delta):
-	$puntuacio1.text=str(Globalvar.punts1)
-
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
-
-
-
+	$puntuacio1.text= str(Globalvar.punts1)
